@@ -1,0 +1,28 @@
+<div>
+    <h2>gornji-element works!</h2>
+</div>
+<br><br><br><br>
+<div>
+    <div>
+        <div *ngIf="element">
+            <span>{{element.visina}}</span>
+        </div>
+            <label>Visina</label>
+        <input id="element-ime" [(ngModel)]="element.visina" placeholder="name">
+    </div>
+    <div>
+            <label>Sirina</label>
+        <input id="element-ime" [(ngModel)]="element.sirina" placeholder="name">
+    </div>
+    <div>
+            <label>Dubina</label>
+        <input id="element-ime" [(ngModel)]="element.dubina" placeholder="name">
+    </div>
+    <br><br><br><br>
+    <div>
+        <button type="submit" (click)="Prihvati()">
+            Prihvati
+        </button>
+    </div>
+    <button type="button" (click) = "goBack()"> Nazad</button>
+</div>
