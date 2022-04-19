@@ -18,7 +18,7 @@ export class GornjiElementComponent implements OnInit {
   }
 
   Prihvati(): void{
-    this.element.visina = String(getNgModuleById("element-ime")) + "a";
+    this.element.visina = (<HTMLInputElement>document.getElementById("element-visina")).value + "a";
   }
   goBack(): void{
     this.location.back();
