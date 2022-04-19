@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'kuhinja';
-  pozadina: String ="assets/Slike/2069255.jpg";
 }
